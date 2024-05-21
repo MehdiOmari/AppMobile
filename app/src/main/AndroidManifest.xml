@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -11,9 +13,31 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppMobile"
-        tools:targetApi="31">
+        tools:targetApi="31"
+        android:name=".myobjects">
+
         <activity
-            android:name=".Login"
+            android:name=".Classe"
+            android:exported="false"
+            android:theme="@style/Theme.AppMobile" />
+        <activity
+            android:name=".LevelsClasses"
+            android:exported="false" />
+        <activity
+            android:name=".SignUpParent"
+            android:exported="false" />
+        <activity android:name=".mainadmin2" />
+        <activity android:name=".studentadmin"/>
+        <activity
+            android:name=".MainParent"
+            android:exported="false" />
+        <activity android:name=".MainProf" />
+        <activity android:name=".SignUp" />
+        <activity android:name=".Login" />
+        <activity android:name=".Profile" />
+        <activity android:name=".ListeClasse" />
+        <activity
+            android:name=".FirstPage"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,9 +45,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".MainActivity"
-            android:exported="false"/>
     </application>
 
 </manifest>
