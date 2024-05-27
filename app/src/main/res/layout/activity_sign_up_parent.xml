@@ -87,7 +87,7 @@
             android:layout_width="113dp"
             android:layout_height="22dp"
             android:layout_marginTop="400dp"
-            android:text="User Name "
+            android:text="Nom"
             android:textColor="@color/black"
             android:textSize="18dp"
             android:textStyle="bold"
@@ -102,7 +102,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="450dp"
             android:background="@drawable/edittxt"
-            android:hint="nom et prenom"
+            android:hint="Nom"
             android:padding="12dp"
             android:singleLine="true"
             android:textSize="14sp"
@@ -116,7 +116,7 @@
             android:layout_width="113dp"
             android:layout_height="22dp"
             android:layout_marginTop="520dp"
-            android:text="User Name "
+            android:text="ID"
             android:textColor="@color/black"
             android:textSize="18dp"
             android:textStyle="bold"
@@ -126,12 +126,12 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/childedit"
+            android:id="@+id/IDedit"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="570dp"
             android:background="@drawable/edittxt"
-            android:hint="nom et prenom"
+            android:hint="ID"
             android:padding="12dp"
             android:singleLine="true"
             android:textSize="14sp"
@@ -140,12 +140,14 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
 
+
+
         <TextView
-            android:id="@+id/emailtxt"
+            android:id="@+id/email"
             android:layout_width="113dp"
             android:layout_height="22dp"
             android:layout_marginTop="640dp"
-            android:text="User Name "
+            android:text="Email"
             android:textColor="@color/black"
             android:textSize="18dp"
             android:textStyle="bold"

@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools" >
 
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:name=".myobjects"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -13,32 +14,64 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppMobile"
-        tools:targetApi="31"
-        android:name=".myobjects">
-
+        tools:targetApi="31" >
         <activity
-            android:name=".Classe"
+            android:name=".PFE.BulletinAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".PFE.GradeProf2"
+            android:exported="false" />
+        <activity
+            android:name=".GradesProf"
+            android:exported="false" />
+        <activity
+            android:name=".PFE.SignUpParent2"
+            android:exported="false" />
+        <activity
+            android:name=".Login2"
+            android:exported="false" />
+        <activity
+            android:name=".choixprofil"
+            android:exported="false" />
+        <activity
+            android:name=".MainAdmin3"
+            android:exported="false" />
+        <activity
+            android:name=".Grades"
+            android:exported="false" />
+        <activity
+            android:name=".PFE.MainProf2"
+            android:exported="false" />
+        <activity
+            android:name=".PFE.MainParent2"
+            android:exported="false" />
+        <activity
+            android:name=".Liste_Eleve_Prof"
+            android:exported="false" />
+        <activity
+            android:name=".ClasseProf"
+            android:exported="false" />
+        <activity
+            android:name=".TeacherAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".Classes"
             android:exported="false"
             android:theme="@style/Theme.AppMobile" />
-        <activity
-            android:name=".LevelsClasses"
-            android:exported="false" />
         <activity
             android:name=".SignUpParent"
             android:exported="false" />
         <activity android:name=".mainadmin2" />
-        <activity android:name=".studentadmin"/>
+        <activity android:name=".PFE.studentadmin" />
         <activity
-            android:name=".MainParent"
+            android:name=".ClasseProf$MainParent"
             android:exported="false" />
         <activity android:name=".MainProf" />
         <activity android:name=".SignUp" />
-        <activity android:name=".Login" />
-        <activity android:name=".Profile" />
-        <activity android:name=".ListeClasse" />
+        <activity android:name=".PFE.Login" />
         <activity
-            android:name=".FirstPage"
-            android:exported="true">
+            android:name=".PFE.FirstPage"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

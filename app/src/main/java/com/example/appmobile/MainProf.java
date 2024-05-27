@@ -10,27 +10,31 @@ import androidx.cardview.widget.CardView;
 
 public class MainProf extends AppCompatActivity {
 
-    private CardView c,profile;
+    private CardView profile;
+    private CardView liste_eleve;
+    private String user_ID;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.main_prof);
 
-        c = findViewById(R.id.contributeCard1);
-        profile = findViewById(R.id.Profile);
-        c.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(MainProf.this,Login.class);
-                startActivity(i);
-                finish();
-            }
-        });
+        liste_eleve = findViewById(R.id.contributeCard);
+        user_ID = getIntent().getStringExtra("user_ID");
+
+        /*profile = findViewById(R.id.Profile);
 
         profile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(MainProf.this,Profile.class);
+                startActivity(i);
+            }
+        });*/
+        liste_eleve.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainProf.this, Liste_Eleve_Prof.class);
+                i.putExtra("user_ID", user_ID);
                 startActivity(i);
             }
         });

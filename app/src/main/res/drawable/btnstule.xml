@@ -8,10 +8,9 @@
         android:topLeftRadius="24dp"
         android:angle="270"
         />
-
-    <gradient android:startColor="#87cefa"
+    <!--<gradient android:startColor="#87cefa"
         android:endColor="#87cefa"
-        />
+        />-->
     <stroke android:width="10px"
         android:color="#1261A0" />
 

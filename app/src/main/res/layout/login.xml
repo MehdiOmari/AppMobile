@@ -5,7 +5,7 @@
     android:id="@+id/loginmain"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login"
+    tools:context=".PFE.Login"
     android:background="#ebebf9">
 
     <LinearLayout
@@ -34,7 +34,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <ImageView
+            <!--<ImageView
                 android:id="@+id/imageView"
                 android:layout_width="200dp"
                 android:layout_height="200dp"
@@ -43,7 +43,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/logo_5" />
+                app:srcCompat="@drawable/logo_5" />-->
 
             <TextView
                 android:id="@+id/welcometxt"
@@ -51,6 +51,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="30dp"
+                android:layout_marginBottom="100dp"
                 android:text="welcome to MySchool "
                 android:textSize="27dp"
                 android:textStyle="bold"

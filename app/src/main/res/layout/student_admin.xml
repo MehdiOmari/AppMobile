@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".studentadmin"
+    tools:context=".PFE.studentadmin"
     android:background="#ebebf9">
 
     <View
@@ -49,8 +49,7 @@
         android:layout_marginTop="16dp"
         app:layout_constraintTop_toBottomOf="@+id/view"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollViewclass">
+        app:layout_constraintEnd_toEndOf="parent">
 
         <LinearLayout
             android:id="@+id/btnlayoutniveau"
@@ -67,7 +66,7 @@
                 android:layout_marginEnd="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
-                android:background="@drawable/btnstule"
+                android:background="@drawable/btnstyle"
                 android:text="A-1"
                 android:textColor="#1261A0"
                 android:textStyle="bold" />
@@ -123,11 +122,24 @@
     </HorizontalScrollView>
 
 
-    <HorizontalScrollView
+    <FrameLayout
+        android:id="@+id/layout_container_classe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2"
+        android:layout_marginTop="30dp">
+
+
+
+        <!--<HorizontalScrollView
         android:id="@+id/horizontalScrollViewclass"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         app:layout_constraintTop_toBottomOf="@+id/horizontalScrollViewniveau"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
@@ -139,14 +151,14 @@
             android:orientation="horizontal">
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/button2"
+                android:id="@+id/class_1"
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
-                android:background="@drawable/btnstule"
+                android:background="@drawable/btnstyle"
                 android:text="classe 1"
                 android:textColor="#1261A0"
                 android:textStyle="bold" />
@@ -159,30 +171,40 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginBottom="10dp"
-                android:background="@drawable/btnstule"
+                android:background="@drawable/btnstyle"
                 android:text="Ajouter Classe"
                 android:textColor="@color/white"
                 android:textStyle="bold" />
 
 
         </LinearLayout>
-    </HorizontalScrollView>
+    </HorizontalScrollView>-->
+    </FrameLayout>
 
 
-    <androidx.core.widget.NestedScrollView
-        android:id="@+id/scrollView_container"
+    <FrameLayout
+        android:id="@+id/layout_container"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginBottom="100dp"
-        android:fillViewport="true"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollViewclass"
-        >
+        android:layout_marginTop="240dp">
 
 
-        <androidx.cardview.widget.CardView
+
+        <!--<androidx.core.widget.NestedScrollView
+            android:id="@+id/scrollView_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="100dp"
+            android:fillViewport="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/horizontalScrollViewclass">
+
+
+            <androidx.cardview.widget.CardView
         android:id="@+id/contributeCard3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -252,9 +274,14 @@
 
         </androidx.cardview.widget.CardView>
 
-    </androidx.core.widget.NestedScrollView>
+        </androidx.core.widget.NestedScrollView>-->
 
-    <androidx.appcompat.widget.AppCompatButton
+    </FrameLayout>
+
+
+
+
+    <!--<androidx.appcompat.widget.AppCompatButton
         android:id="@+id/ajoute_etudiant"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -268,6 +295,6 @@
         android:textSize="20dp"
         android:textColor="@color/white"
         android:background="@drawable/btnstule"
-        android:padding="15dp"/>
+        android:padding="15dp"/>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

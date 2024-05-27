@@ -43,29 +43,27 @@ public class SignUp extends AppCompatActivity {
         e2 = findViewById(R.id.emailedit);
         e3 = findViewById(R.id.passedit);
 
-        if (FirstPage.checkadmin) {
-            btn_signup.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    admin.setName(e1.getText().toString());
-                    admin.setEmail(e2.getText().toString());
-                    admin.setPassword(e3.getText().toString());
 
-                    if (admin.getName().isEmpty()) Toast.makeText(SignUp.this, "name empty", Toast.LENGTH_SHORT).show();
-                    else if (admin.getEmail().isEmpty()) Toast.makeText(SignUp.this, "email empty", Toast.LENGTH_SHORT).show();
-                    else if (admin.getPassword().isEmpty()) Toast.makeText(SignUp.this, "password empty", Toast.LENGTH_SHORT).show();
-                    else if (!admin.check_name()) Toast.makeText(SignUp.this, "invalid name", Toast.LENGTH_SHORT).show();
-                    else if(!admin.check_email()) Toast.makeText(SignUp.this, "invalid email", Toast.LENGTH_SHORT).show();
-                    else {
-                        admin.setNameData();
-                        admin.setEmailData();
-                        admin.setPasswordData();
-                        admin.signAdmin(SignUp.this);
-                        FirstPage.checkadmin = false;
-                    }
+        btn_signup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                admin.setName(e1.getText().toString());
+                admin.setEmail(e2.getText().toString());
+                admin.setPassword(e3.getText().toString());
+
+                if (admin.getName().isEmpty()) Toast.makeText(SignUp.this, "name empty", Toast.LENGTH_SHORT).show();
+                else if (admin.getEmail().isEmpty()) Toast.makeText(SignUp.this, "email empty", Toast.LENGTH_SHORT).show();
+                else if (admin.getPassword().isEmpty()) Toast.makeText(SignUp.this, "password empty", Toast.LENGTH_SHORT).show();
+                else if (!admin.check_name()) Toast.makeText(SignUp.this, "invalid name", Toast.LENGTH_SHORT).show();
+                else if(!admin.check_email()) Toast.makeText(SignUp.this, "invalid email", Toast.LENGTH_SHORT).show();
+                else {
+                    admin.setNameData();
+                    admin.setEmailData();
+                    admin.setPasswordData();
+                    admin.signAdmin(SignUp.this);
                 }
-            });
-        }
+            }
+        });
 
     }
 

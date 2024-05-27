@@ -1,24 +1,19 @@
-package com.example.appmobile;
+package com.example.appmobile.PFE;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-
-import java.util.HashMap;
+import com.example.appmobile.R;
 
 public class FirstPage extends AppCompatActivity {
     private CardView admin;
     private CardView parent;
     private CardView professeur;
-    public static boolean checkadmin;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,15 +26,16 @@ public class FirstPage extends AppCompatActivity {
         admin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                checkadmin = true;
                 Intent i = new Intent(FirstPage.this, Login.class);
+                i.putExtra("Type","Admin");
                 startActivity(i);
             }
         });
         parent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(FirstPage.this, SignUpParent.class);
+                Intent i = new Intent(FirstPage.this, Login.class);
+                i.putExtra("Type","Parent");
                 startActivity(i);
             }
         });
@@ -47,6 +43,7 @@ public class FirstPage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(FirstPage.this, Login.class);
+                i.putExtra("Type","Prof");
                 startActivity(i);
             }
         });

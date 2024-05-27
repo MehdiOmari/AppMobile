@@ -3,6 +3,18 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
+    <TextView
+        android:id="@+id/IDtxt"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"/>
+
 
     <TextView
         android:id="@+id/etudianttxt"

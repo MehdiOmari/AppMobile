@@ -2,12 +2,13 @@ package com.example.appmobile;
 
 import java.util.ArrayList;
 
-public class Classe {
+public class Classes {
+    private String id_level_class;
     private String id_Classe;
-    private ArrayList <String> Liste_Eleves = new ArrayList<>();
+    private ArrayList <Eleve> Liste_Eleves = new ArrayList<>();
 
-    public Classe (){}
-    public Classe (String id){
+    public Classes(){}
+    public Classes(String id){
         this.id_Classe = id;
     }
 

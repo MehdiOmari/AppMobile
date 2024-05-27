@@ -23,7 +23,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:hint="Entrer Date de naissance" />
+            android:hint="Entrer Date de naissance dd-MM-yyy" />
 
         <EditText
             android:id="@+id/lieuEdit"

@@ -19,23 +19,7 @@
         app:layout_constraintTop_toTopOf="parent"
         />
 
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="104dp"
-        android:text="Welcome user"
-        android:textSize="25dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/view"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.178"
-        app:layout_constraintStart_toStartOf="@+id/view"
-        app:layout_constraintTop_toTopOf="@+id/view"
-        app:layout_constraintVertical_bias="0.343" />
-
-
-    <LinearLayout
+    <!--<LinearLayout
         android:id="@+id/menu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -138,7 +122,34 @@
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>
-    </LinearLayout>
+    </LinearLayout>-->
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="Khayat Salah"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/more"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:background="@drawable/more"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toStartOf="@+id/title"
+        app:layout_constraintHorizontal_bias="0.172"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintVertical_bias="0.267" />
 
     <LinearLayout
         android:id="@+id/linearLayout1"
@@ -401,7 +412,7 @@
                     android:id="@+id/scheduleimg"
                     android:layout_width="128dp"
                     android:layout_height="74dp"
-                    android:src="@drawable/schedule"
+                    android:src="@drawable/icon_6031219_640"
                     app:layout_constraintBottom_toTopOf="@+id/scheduletxt"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="1.0"
@@ -413,7 +424,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="EDT etudiant"
+                    android:text="Classes-Profs"
                     android:textAllCaps="true"
                     android:textColor="@color/black"
                     android:textSize="14sp"
@@ -569,7 +580,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="edt exam"
+                    android:text="EDT"
                     android:textAllCaps="true"
                     android:textColor="@color/black"
                     android:textSize="14sp"
